@@ -1,0 +1,277 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    background-color: #0d47a1;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #1976d2;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #bbdefb;
+  }
+  
+  /* Main Sections */
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  main h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 5px;
+  }
+  
+  main p, main ul {
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  
+  /* Contact Links */
+  #contact a {
+    color: #1976d2;
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0d47a1;
+    color: white;
+    margin-top: 40px;
+    border-top: 3px solid #1976d2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    main {
+      margin: 20px 10px;
+      padding: 15px;
+    }
+  }
+
+  /* Dark Mode */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Dark mode toggle */
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #0d47a1;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Navigation */
+nav {
+  background-color: #1976d2;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #bbdefb;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+body.dark main {
+  background-color: #1e1e1e;
+}
+
+main h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 5px;
+}
+
+body.dark main h2 {
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+ul li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+/* Contact */
+#contact a {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+body.dark #contact a {
+  color: #90caf9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0d47a1;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 45px;
+}
+
+body.dark .toggle-btn {
+  background: #90caf9;
+  color: #121212;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
